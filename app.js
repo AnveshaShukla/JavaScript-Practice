@@ -1,24 +1,13 @@
-//data types
-// primitive data types
-var Name="Anvesha Shukla"
-console.log(Name)
-let age=19
-console.log(typeof age)
-let Namee="Anvesha"
-console.log(Namee)
-let brand=null
-console.log(brand)
-let isTrue=true
-console.log(isTrue)
-console.log(typeof isTrue)
+// const rock=document.querySelector('#rock')
+// const paper=document.querySelector('#paper')
+// const scissor=document.querySelector('#scissor')
 
-//non primitive data type
-
-let arr=[1,2,3,4,5]
-console.log(arr)
-arr.push(6) //pushes another element to the end of array
-console.log(arr)
-arr.push("anvesha")
-console.log(arr) //not limited to one data type 
-arr.unshift(0)//adds an element to the beginning of an array
-console.log(arr) 
+function logName(Name,age){
+    console.log(Name,age)
+}
+function add(a=0,b=0){
+    const sum=a+b
+    return sum
+}
+const r=add(10,20)
+console.log(r)
