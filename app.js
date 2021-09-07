@@ -5,9 +5,12 @@
 function logName(Name,age){
     console.log(Name,age)
 }
-function add(a=0,b=0){
-    const sum=a+b
-    return sum
+// const add=function(a=0,b=0)
+// {
+//     return a+b
+// }
+// console.log(add(20,20))
+const add=(a=0,b=0) =>{
+    return a+b
 }
-const r=add(10,20)
-console.log(r)
+console.log(add(30,20))
