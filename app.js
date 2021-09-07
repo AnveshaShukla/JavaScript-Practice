@@ -1,45 +1,21 @@
-const rock=document.querySelector('#rock')
-const paper=document.querySelector('#paper')
-const scissor=document.querySelector('#scissor')
-const board=document.querySelector('#board')
+const balls=document.getElementsByClassName('ball')
+const body=document.querySelector('body')
 
-const handler=(event)=>{
-    //console.log(event.target)
-    const action=event.target.id
-    // if(action ==='rock')
-    // {
-    //     board.innerHTML=("Rock crushes scissor")
-    // }
-    // else if( action ==='paper'){
-    //     board.innerHTML=("Paper traps Rock")
-    // }
-    // else if( action ==='scissor'){
-    //     board.innerHTML=("Scissor cuts paper")
-    // }
-    // else{
-    //     board.innerHTML=("Click something")
-    // }
-    switch (action){
-        case "rock":
-            board.innerHTML=("Rock crushes scissor")
-            break;
-        case "paper":
-            board.innerHTML=("Paper traps Rock")
-            break;
-        case "scissor":
-            board.innerHTML=("Scissor cuts paper")
-            break;
-        default:
-            board.innerHTML=("Click something")
-            break;
-    }
-}
+const arr=[1,2,3,4,5]
+// while(arr.length<15){
+//     length is 14
+//     arr.push("Iteration")
+//     length is 15
+// }
+//  arr.push(6)
+// console.log(arr)
+//  arr.shift()
+// arr.splice(2,3)
+// console.log(arr) // thats why the length is 15 and not 14
 
-// rock.addEventListener('click', () => {handler('rock')})
-// paper.addEventListener('click', () => {handler('paper')})
-// scissor.addEventListener('click', () => {handler('scissor')})
-
-
-rock.addEventListener('click',handler)
- paper.addEventListener('click',handler)
- scissor.addEventListener('click',handler)
+// for(var i=0;i<arr.length;i++){
+//     console.log(i)
+// }
+arr.forEach(() => {
+    console.log(i)
+})
