@@ -1,21 +1,15 @@
-const balls=document.getElementsByClassName('ball')
-const body=document.querySelector('body')
+const balls = document.querySelectorAll('.ball')
+// const balls = document.getElementsByClassName('ball')
+const body = document.querySelector('body')
 
-const arr=[1,2,3,4,5]
-// while(arr.length<15){
-//     length is 14
-//     arr.push("Iteration")
-//     length is 15
-// }
-//  arr.push(6)
-// console.log(arr)
-//  arr.shift()
-// arr.splice(2,3)
-// console.log(arr) // thats why the length is 15 and not 14
 
-// for(var i=0;i<arr.length;i++){
-//     console.log(i)
-// }
-arr.forEach(() => {
-    console.log(i)
+balls.forEach((ball, iteration) => {
+    const value = iteration * 50
+    ball.style = `transform:translateY(${value}px)`
 })
+
+let age = 19
+let Name = "Sakshi"
+
+console.log('Your age is ' + age)
+console.log(`Hi ${Name} Your age is ${age}`)
