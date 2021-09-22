@@ -77,5 +77,6 @@ console.log(dum1) //Object destructuring
 // } 
 // console.log(add(10,20)) //ES-6
 
-let addition=(x,y) => x+y;
-console.log(addition(20,20))
+let addition=(x,y) => x+y; //Arrow Function
+console.log(addition(20,20)) 
+
